@@ -107,7 +107,7 @@ if __name__ == "__main__":
     # langcount = processDir(known_dir, langcount)
     # langcount = processDir(surprise_dir, langcount)
 
-    lang2fam = json.load(open("src/lang2family.json"))
+    lang2fam = json.load(open("src/lang2fam.json"))
     lang2dir = json.load(open("src/lang2dir.json"))
 
     for lang, fam in lang2fam.items():
