@@ -1,7 +1,6 @@
 # convert the shared task data into paradigms
 
-import os
-import sys
+import os, json
 from collections import defaultdict
 
 def _oneFile2paradigm(fname, lemma_paradigm, lemma_paradigm_filled, msdlist):
@@ -85,34 +84,33 @@ def _paradigm2output(paradigm, foutname, pos_msd_dict):
 
 def generate_paradigms(lemma_paradigm, lemma_paradigm_filled, msdlist, lang):
     paradigm_dir = 'paradigms/'
-    if not os.path.exists(paradigm_dir):
-        os.makedirs(paradigm_dir)
+    os.makedirs(paradigm_dir, exist_ok=True)
     fparadigm_name = os.path.join(paradigm_dir, lang+'.paradigm')
     fparadigm_filled_name = os.path.join(paradigm_dir, lang + '.paradigm.filled')
     _paradigm2output(lemma_paradigm, fparadigm_name, msdlist)
     # _paradigm2output(lemma_paradigm_filled, fparadigm_filled_name, msdlist)
 
-def processDir(dirname, count):
-    for fam in os.listdir(dirname):
-        if fam != 'readme':
-            fam_dir = os.path.join(dirname, fam)
-            for lang in os.listdir(fam_dir):
-                if '.trn' in lang:
-                    lang = lang.split('.')[0]
-                    count += 1
-                    print('ID:', count, '... processing ...', fam_dir, '...', lang, '...')
-                    ftrn_name = os.path.join(fam_dir, lang+'.trn')
-                    fdev_name = os.path.join(fam_dir, lang + '.dev')
-                    ftst_name = os.path.join(fam_dir, lang + '.tst')
-                    lemma_paradigm, lemma_paradigm_filled, msdlist = files2paradigm(ftrn_name, fdev_name, ftst_name)
-                    generate_paradigms(lemma_paradigm, lemma_paradigm_filled, msdlist, lang)
-    return count
+def process_one_language(dirname, lang):
+    ftrn_name = os.path.join(dirname, lang+'.trn')
+    fdev_name = os.path.join(dirname, lang + '.dev')
+    ftst_name = os.path.join(dirname, lang + '.tst')
+    lemma_paradigm, lemma_paradigm_filled, msdlist = files2paradigm(ftrn_name, fdev_name, ftst_name)
+    generate_paradigms(lemma_paradigm, lemma_paradigm_filled, msdlist, lang)
+    return
 
 if __name__ == "__main__":
-    dirnow = sys.argv[1]
-    known_dir = dirnow + "/task0-data/DEVELOPMENT-LANGUAGES/"
-    surprise_dir = dirnow + "/task0-data/SURPRISE-LANGUAGES/"
+    # dirnow = "./"
+    # known_dir = dirnow + "/task0-data/DEVELOPMENT-LANGUAGES/"
+    # surprise_dir = dirnow + "/task0-data/SURPRISE-LANGUAGES/"
+    #
+    # langcount = 0
+    # langcount = processDir(known_dir, langcount)
+    # langcount = processDir(surprise_dir, langcount)
 
-    langcount = 0
-    langcount = processDir(known_dir, langcount)
-    langcount = processDir(surprise_dir, langcount)
+    lang2fam = json.load(open("src/lang2family.json"))
+    lang2dir = json.load(open("src/lang2dir.json"))
+
+    for lang, fam in lang2fam.items():
+        print("...reconstruction paradigms for {}...".format(lang))
+        langdir = os.path.join("task0-data", lang2dir[lang], fam)
+        process_one_language(langdir, lang)

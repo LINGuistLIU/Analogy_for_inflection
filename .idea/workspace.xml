@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b99649f-8d93-4b98-9d94-c455c588bb01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/get_paradigms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/get_paradigms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang2dir.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lang2fam.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makedata_1src1crosstable/prepareDev.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/makedata_1src1crosstable/prepareDev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makedata_1src1crosstable/prepareTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/makedata_1src1crosstable/prepareTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makedata_1src1crosstable/prepareTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/makedata_1src1crosstable/prepareTrain.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makedata_1src2crosstable/prepareDev.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/makedata_1src2crosstable/prepareDev.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makedata_1src2crosstable/prepareTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/makedata_1src2crosstable/prepareTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makedata_1src2crosstable/prepareTrain.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/makedata_1src2crosstable/prepareTrain.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1jek739bEibswD2yO3lsWFJRJXh" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.get_paradigms">
+    <configuration name="get_paradigms" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Analogy_for_inflection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/get_paradigms.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="reproduce" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Analogy_for_inflection" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/reproduce.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.get_paradigms" />
+        <item itemvalue="Python.reproduce" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b99649f-8d93-4b98-9d94-c455c588bb01" name="Default Changelist" comment="" />
+      <created>1604171773117</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604171773117</updated>
+      <workItem from="1604171774656" duration="2027000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Analogy_for_inflection$get_paradigms.coverage" NAME="get_paradigms Coverage Results" MODIFIED="1604173203560" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Analogy_for_inflection$reproduce.coverage" NAME="reproduce Coverage Results" MODIFIED="1604172660702" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

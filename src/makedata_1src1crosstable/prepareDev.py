@@ -1,5 +1,4 @@
-# srcForm1 srcMSD1 # srcForm2 srcMSD2 # ... # tgtMSD => tgtForm
-# i.e. leave one out for input, and output is tgtForm
+# sourceForm sourceMSD # crosstableTargetForm target MSD # targetMSD => targetForm
 
 import os, sys, json, inspect, random
 
