@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-TYPE=1src2crosstable
+TYPE=$1
 DIRNOW=./
 SNT=10
 

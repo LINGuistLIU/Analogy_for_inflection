@@ -114,3 +114,4 @@ if __name__ == "__main__":
         print("...reconstruction paradigms for {}...".format(lang))
         langdir = os.path.join("task0-data", lang2dir[lang], fam)
         process_one_language(langdir, lang)
+
