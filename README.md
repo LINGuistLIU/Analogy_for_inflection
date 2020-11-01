@@ -2,6 +2,7 @@
 
 This is the code and data we used for experiments in the following paper:
 
+Ling Liu and Mans Hulden. 2020. [Analogy models for neural word inflection](). *COLING*.
 
 1. reconstruct partial paradigms from shared task data:
 
