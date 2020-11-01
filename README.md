@@ -17,4 +17,6 @@ This is the code and data we used for experiments in the following paper:
 
 3. evaluation:
 
+    ```python src/evaluate.py <language> <data_organization_method>```
+
     
