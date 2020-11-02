@@ -12,11 +12,11 @@ All dependencies can be installed as follows:
 
 ```python install -r requirements.txt```
 
-## reconstruct partial paradigms from shared task data
+## Reconstruct partial paradigms from shared task data
 
 ```python src/get_paradigms.py```
 
-## train the models and make predictions
+## Train the models and make predictions
 
 ```./src/runAll.sh <data_reformatting_method>```
 
@@ -24,11 +24,11 @@ All dependencies can be installed as follows:
 
 Details on training parameters for different data_organization_method can be found in Appendix A of the paper.
 
-## data hallucination
+## Data hallucination
 
 We used data hallucination implementation provided by the SIGMORPHON 2020 shared task 0, available [here: example/sigmorphon2020-shared-tasks/augment.sh](https://github.com/shijie-wu/neural-transducer/tree/f1c89f490293f6a89380090bf4d6573f4bfca76f). We conducted the data hallucination on the training data created with the ```1src``` data reformatting method.
 
-## evaluation
+## Evaluation
 
 ```python src/evaluate.py <language> <data_organization_method>```
 
