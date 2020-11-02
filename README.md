@@ -10,7 +10,7 @@ This repository was tested on Python 3.6.10.
 
 All dependencies can be installed as follows:
 
-```python install -r requirements.txt```
+```pip install -r requirements.txt```
 
 ## Reconstruct partial paradigms from shared task data
 
