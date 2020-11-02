@@ -64,7 +64,6 @@ for LANGUAGE in tgk dje mao lin xno lud zul sot vro ceb mlg gmh kon gaa izh; do
         else
 	  count=0
 	fi
-        
 
 	accpre=$accnow
         echo $accnow $count
@@ -81,6 +80,8 @@ for LANGUAGE in tgk dje mao lin xno lud zul sot vro ceb mlg gmh kon gaa izh; do
     # generate for test data
     echo "... generating and evaluating for test set ..."
     $DIRNOW/src/generate.sh $LANGUAGE test $OUTFILE $DIRNOW
+
+
 
     mkdir -p "${DIRNOW}/checkpoints-${TYPE}/"
     mkdir -p "${DIRNOW}/data-bin-${TYPE}/"
