@@ -40,7 +40,7 @@ def train_dev_test_list(fname):
             trainlist.append(paradigm)
             devlist.append(devparadigm)
             testlist.append(testparadigm)
-    return trainlist, devlist, testlist
+    return trainlist, devlist, testlist, msd2formlist
 
 def getParalleltgtform(msd2formlist, tgtmsd, tgtform):
     tgtformlist = []

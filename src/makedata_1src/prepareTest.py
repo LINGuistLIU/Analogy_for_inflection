@@ -39,7 +39,7 @@ if __name__ == "__main__":
     paradigmdir = dirnow + "/paradigms/"
 
     fname = paradigmdir + lang + '.paradigm'
-    trainlist, devlist, testlist = readdata.train_dev_test_list(fname)
+    trainlist, devlist, testlist, msd2formlist = readdata.train_dev_test_list(fname)
 
     outputdir = dirnow + '/'
     if not os.path.exists(outputdir):

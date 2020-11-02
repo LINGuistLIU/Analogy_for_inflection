@@ -52,7 +52,7 @@ if __name__ == "__main__":
     datadir = dirnow + "/paradigms/"
 
     fname = datadir + lang + '.paradigm'
-    trainlist, devlist, testlist = readdata.train_dev_test_list(fname)
+    trainlist, devlist, testlist, msd2formlist = readdata.train_dev_test_list(fname)
 
     # outputdir = 'one_source/'
     outputdir = dirnow + '/'
