@@ -4,24 +4,32 @@ This is the code and data we used for experiments in the following paper:
 
 Ling Liu and Mans Hulden. 2020. [Analogy models for neural word inflection](). *COLING*.
 
-1. reconstruct partial paradigms from shared task data:
+## Installation
 
-    ```python src/get_paradigms.py```
+This repository was tested on Python 3.6.10.
 
-2. train the models and make predictions:
+All dependencies can be installed as follows:
 
-    ```./src/runAll.sh <data_reformatting_method>```
+```python install -r requirements.txt```
 
-    ```<data_reformatting_method>``` can be # change here for other data reformatting methods: ```1src```, ```1src1crosstable```, ```1src2crosstable```, ```2src```, or ```leave1outMSDchunk```.
+## reconstruct partial paradigms from shared task data
 
-    Details on training parameters for different data_organization_method can be found in Appendix A of the paper.
+```python src/get_paradigms.py```
 
-3. data hallucination:
+## train the models and make predictions
 
-    We used data hallucination implementation provided by the SIGMORPHON 2020 shared task 0, available [here: example/sigmorphon2020-shared-tasks/augment.sh](https://github.com/shijie-wu/neural-transducer/tree/f1c89f490293f6a89380090bf4d6573f4bfca76f). We conducted the data hallucination on the training data created with the ```1src``` data reformatting method.
+```./src/runAll.sh <data_reformatting_method>```
 
-4. evaluation:
+```<data_reformatting_method>``` can be # change here for other data reformatting methods: ```1src```, ```1src1crosstable```, ```1src2crosstable```, ```2src```, or ```leave1outMSDchunk```.
 
-    ```python src/evaluate.py <language> <data_organization_method>```
+Details on training parameters for different data_organization_method can be found in Appendix A of the paper.
+
+## data hallucination
+
+We used data hallucination implementation provided by the SIGMORPHON 2020 shared task 0, available [here: example/sigmorphon2020-shared-tasks/augment.sh](https://github.com/shijie-wu/neural-transducer/tree/f1c89f490293f6a89380090bf4d6573f4bfca76f). We conducted the data hallucination on the training data created with the ```1src``` data reformatting method.
+
+## evaluation
+
+```python src/evaluate.py <language> <data_organization_method>```
 
     
