@@ -18,7 +18,7 @@ All dependencies can be installed as follows:
 
 ## Train the models and make predictions
 
-```./src/runAll.sh <data_reformatting_method>```
+```bash src/runAll.sh <data_reformatting_method>```
 
 ```<data_reformatting_method>``` can be # change here for other data reformatting methods: ```1src```, ```1src1crosstable```, ```1src2crosstable```, ```2src```, or ```leave1outMSDchunk```.
 
