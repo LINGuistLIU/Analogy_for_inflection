@@ -21,6 +21,32 @@ def read_gold(fgold):
             idx += 1
     return id2gold
 
+def get_best_on_dev(lang, data_organization):
+    pred_dir = os.path.join("checkpoints-"+data_organization, lang+"-predictions")
+    file2acc = {}
+    for item in os.listdir(pred_dir):
+        if "dev-" in item:
+            fname = os.path.join(pred_dir, item)
+            with open(fname) as f:
+                id2pred = {}
+                id2gold = {}
+                for line in f:
+                    if line[:2] == "H-":
+                        idx, score, pred = line.split("\t")
+                        idx = int(idx.split("-")[-1])
+                        pred = pred.strip().replace(" ", "").replace("<<unk>>", "?").replace("<unk>", "?").replace("_", " ")
+                        id2pred[idx] = pred
+                    elif line[:2] == "T-":
+                        idx, gold = line.split("\t")
+                        idx = int(idx.split("-")[-1])
+                        gold = gold.strip().replace(" ", "").replace("<<unk>>", "?").replace("<unk>", "?").replace("_", " ")
+                        id2gold[idx] = gold
+            acc = eval(id2pred, id2gold)
+            file2acc[item] = acc
+    return max(file2acc.items(), key=lambda x:x[1])[0]
+
+                        
+
 def eval(id2pred, id2gold):
     guess = 0
     correct = 0
@@ -35,7 +61,8 @@ def main():
     lang = sys.argv[1]
     data_organization = sys.argv[2]
     dirnow = "./"
-    fprediction = os.path.join(dirnow, "checkpoints-" + data_organization, lang + "-predictions", "test-checkpoint_best.pt.txt")
+    best_on_dev = get_best_on_dev(lang, data_organization)
+    fprediction = os.path.join(dirnow, "checkpoints-" + data_organization, lang + "-predictions", best_on_dev.replace("dev-", "test-"))
     fgold = os.path.join(dirnow, "task0-data/GOLD-TEST/" + lang + ".tst")
     id2pred = read_predictions(fprediction)
     id2gold = read_gold(fgold)
