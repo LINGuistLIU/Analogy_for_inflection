@@ -2,7 +2,7 @@
 
 This is the code and data we used for experiments in the following paper:
 
-Ling Liu and Mans Hulden. 2020. [Analogy models for neural word inflection](). *COLING*.
+Ling Liu and Mans Hulden. 2020. [Analogy models for neural word inflection](https://www.aclweb.org/anthology/2020.coling-main.257/). *COLING 2020*.
 
 ## Installation
 
